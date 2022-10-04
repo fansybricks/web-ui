@@ -2,17 +2,48 @@
 
 .btn {
   all: unset;
-  padding: 0.25rem 1rem;
-  border-radius: 8px;
-  color: white;
-  background-color: $primaryBlue;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: translate 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.75;
-  }
-
   &:active {
-    opacity: 0.5;
+    opacity: 0.85;
   }
+}
+
+.primaryBtn {
+  color: $white;
+  background-color: $purple;
+  box-shadow: 0 10px 15px $purpleBoxShadow;
+
+  &:hover {
+    translate: 0 2px;
+    box-shadow: 0 10px 25px $purpleBoxShadow;
+  }
+}
+
+.secondaryBtn {
+  color: $purple;
+  background-color: $white;
+  box-shadow: 0 10px 15px $paleBlueBoxShadow;
+  transition: translate 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+
+  &:hover {
+    translate: 0 2px;
+    box-shadow: 0 10px 25px $paleBlueBoxShadow;
+  }
+}
+
+.normalBtn {
+  border-radius: 8px;
+}
+
+.pillBtn {
+  border-radius: 9999px;
+}
+
+.sharpBtn {
+  border-radius: 0;
 }
