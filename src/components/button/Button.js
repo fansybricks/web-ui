@@ -3,8 +3,9 @@ import clsx from 'clsx'
 
 import stl from './Button.module.scss'
 
-const Button = ({ label, onClick, theme, variant, customClass }) => (
+const Button = ({ label, onClick, theme, variant, type, customClass }) => (
   <button
+    type={type}
     onClick={onClick}
     className={clsx(
       stl.btn,
@@ -29,6 +30,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   theme: PropTypes.oneOf(['primary', 'secondary']),
   variant: PropTypes.oneOf(['normal', 'pill', 'sharp']),
+  type: PropTypes.string,
   customClass: PropTypes.string,
 }
 
