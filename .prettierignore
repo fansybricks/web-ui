@@ -1,1 +1,9 @@
 .github/*
+
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+build
+coverage
